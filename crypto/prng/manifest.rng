@@ -1,0 +1,39 @@
+#ca.bat              Generic compile batch file for all console compilers
+$log_rng.zip         Archive with log files of final tests done before release
+aesr.pas             CPRNG based on AES CTR mode with 128 bit key
+btypes.pas           Common basic type definitions
+copying_we.txt       License
+isaac.pas            The ISAAC cryptographic random number generator
+kiss123.pas          KISS123 based pseudo random number generator
+legal.txt            Legal notice (cryptography, software patents)
+manifest.rng         This file
+marsag99.use         G. Marsaglia's Usenet post "Random numbers for C: End, at last?"
+mt19937.pas          MT19937 based pseudo random number generator
+readme.rng           Archive info
+salsar.pas           CPRNG based on the Salsa20 stream cipher
+std.inc              Standard definitions and options
+t_all_rg.pas         Simple test for all (c)PRNG
+t_rnd_0?.pas         Test programs Pascal  generator
+t_rnd_1?.pas         Test programs Taus88  generator
+t_rnd_2?.pas         Test programs TT800   generator
+t_rnd_3?.pas         Test programs ISAAC   generator
+t_rnd_4?.pas         Test programs MT19937 generator
+t_rnd_5?.pas         Test programs Taus113 generator
+t_rnd_6?.pas         Test programs KISS123 generator
+t_rnd_7?.pas         Test programs aesr unit
+t_rnd_8?.pas         Test programs salsar unit
+t_rnd_9?.pas         Test programs xor4096 generator
+t_taus113.c          C program to generate selftest values for Taus113
+t_taus88.c           C program to generate selftest values for Taus88
+t_tt800l.c           C program to generate selftest values for TT800
+t_xor4096.c          C program to generate selftest values for xor4096
+taus113.pas          Taus113 based pseudo random number generator
+taus88.pas           Taus88  based pseudo random number generator
+tt800.pas            TT800   based pseudo random number generator
+xor4096.pas          xor4096 based pseudo random number generator
+
+hrtimer.pas          High resolution timer routines with comp data type
+ministat.pas         Mini statistics unit: Accurate running values for 1 and 2 variables
+tsc.pas              Access to Time Stamp Counter (RDTSC)
+_tsc.asm             RDTSC helper routines for 16 bit
+_tsc.obj             Compiled _tsc.asm

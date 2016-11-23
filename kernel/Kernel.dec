@@ -1,0 +1,95 @@
+{******************************************************************************}
+{*  Kernel.dec                                                                *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{ ядро }
+{%File 'kernel/Kernel.pas'}
+    { список }
+    {%File 'kernel/TItems.int.inc'}
+    {%File 'kernel/TItems.err.inc'}
+    {%File 'kernel/TItems.imp.inc'}
+{%File 'kernel/ProtoClasses.pas'}
+    { прото-свойство }
+    {%File 'kernel/TProtoProperty.int.inc'}
+    {%File 'kernel/TProtoProperty.err.inc'}
+    {%File 'kernel/TProtoProperty.imp.inc'}
+    { список прото-свойств }
+    {%File 'kernel/TProtoProperties.int.inc'}
+    {%File 'kernel/TProtoProperties.err.inc'}
+    {%File 'kernel/TProtoProperties.imp.inc'}
+    { прото-объект }
+    {%File 'kernel/TProtoObject.int.inc'}
+    {%File 'kernel/TProtoObject.err.inc'}
+    {%File 'kernel/TProtoObject.imp.inc'}
+    { список прото-объектов }
+    {%File 'kernel/TProtoObjects.int.inc'}
+    {%File 'kernel/TProtoObjects.err.inc'}
+    {%File 'kernel/TProtoObjects.imp.inc'}
+{%File 'kernel/CryptoSystem.pas'}
+    { крипто-система }
+    {%File 'kernel/TCrypto.int.inc'}
+    {%File 'kernel/TCrypto.err.inc'}
+    {%File 'kernel/TCrypto.imp.inc'}
+{%File 'kernel/CryptoClasses.pas'}
+    { крипто-свойство }
+    {%File 'kernel/TCryptoProperty.int.inc'}
+    {%File 'kernel/TCryptoProperty.err.inc'}
+    {%File 'kernel/TCryptoProperty.imp.inc'}
+    { крипто-объект }
+    {%File 'kernel/TCryptoObject.int.inc'}
+    {%File 'kernel/TCryptoObject.err.inc'}
+    {%File 'kernel/TCryptoObject.imp.inc'}
+    { список  крипто-объектов }
+    {%File 'kernel/TCryptoObjects.int.inc'}
+    {%File 'kernel/TCryptoObjects.err.inc'}
+    {%File 'kernel/TCryptoObjects.imp.inc'}
+{%File 'kernel/MetaClasses.pas'}
+    { мета-свойство }
+    {%File 'kernel/TMetaProperty.int.inc'}
+    {%File 'kernel/TMetaProperty.err.inc'}
+    {%File 'kernel/TMetaProperty.imp.inc'}
+    { мета-объект }
+    {%File 'kernel/TMetaObject.int.inc'}
+    {%File 'kernel/TMetaObject.err.inc'}
+    {%File 'kernel/TMetaObject.imp.inc'}
+    { список мета-объектов }
+    {%File 'kernel/TMetaObjects.int.inc'}
+    {%File 'kernel/TMetaObjects.err.inc'}
+    {%File 'kernel/TMetaObjects.imp.inc'}
+{%File 'kernel/ParaClasses.pas'}
+    { пара-объект }
+    {%File 'kernel/TParaObject.int.inc'}
+    {%File 'kernel/TParaObject.err.inc'}
+    {%File 'kernel/TParaObject.imp.inc'}
+    { список пара-объектов }
+    {%File 'kernel/TParaObjects.int.inc'}
+    {%File 'kernel/TParaObjects.err.inc'}
+    {%File 'kernel/TParaObjects.imp.inc'}
+{%File 'kernel/HypoClasses.pas'}
+    { гипо-объект }
+    {%File 'kernel/THypoObject.int.inc'}
+    {%File 'kernel/THypoObject.err.inc'}
+    {%File 'kernel/THypoObject.imp.inc'}
+    { список гипо-объектов }
+    {%File 'kernel/THypoObjects.int.inc'}
+    {%File 'kernel/THypoObjects.err.inc'}
+    {%File 'kernel/THypoObjects.imp.inc'}
+{%File 'kernel/HyperClasses.pas'}
+    { гипер-объект }
+    {%File 'kernel/THyperObject.int.inc'}
+    {%File 'kernel/THyperObject.err.inc'}
+    {%File 'kernel/THyperObject.imp.inc'}
+    { список гипер-объектов }
+    {%File 'kernel/THyperObjects.int.inc'}
+    {%File 'kernel/THyperObjects.err.inc'}
+    {%File 'kernel/THyperObjects.imp.inc'}
+{%File 'kernel/HashTable.pas'}
+    { элемент хэш-таблицы }
+    {%File 'kernel/THashItem.int.inc'}
+    {%File 'kernel/THashItem.err.inc'}
+    {%File 'kernel/THashItem.imp.inc'}
+    { хэш-таблица }
+    {%File 'kernel/THashList.int.inc'}
+    {%File 'kernel/THashList.err.inc'}
+    {%File 'kernel/THashList.imp.inc'}

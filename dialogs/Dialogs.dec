@@ -1,0 +1,48 @@
+{******************************************************************************}
+{*  DialogClasses.dec                                                         *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{ диалоги }
+{%File 'dialogs/DialogClasses.pas'}
+{%File 'dialogs/uProtoDialog.pas'}
+    { диалоговая кнопка }
+    {%File 'dialogs/TDialogButton.int.inc'}
+    {%File 'dialogs/TDialogButton.err.inc'}
+    {%File 'dialogs/TDialogButton.imp.inc'}
+    { список диалоговых кнопок }
+    {%File 'dialogs/TDialogButtons.int.inc'}
+    {%File 'dialogs/TDialogButtons.err.inc'}
+    {%File 'dialogs/TDialogButtons.imp.inc'}
+{%File 'dialogs/uTextDialog.pas'}
+{%File 'dialogs/uExceptionDialog.pas'}
+{%File 'dialogs/uMetaDialog.pas'}
+    { поле диалогового окна }
+    {%File 'dialogs/TDialogField.int.inc'}
+    {%File 'dialogs/TDialogField.err.inc'}
+    {%File 'dialogs/TDialogField.imp.inc'}
+    { список полей диалогового окна }
+    {%File 'dialogs/TDialogFields.int.inc'}
+    {%File 'dialogs/TDialogFields.err.inc'}
+    {%File 'dialogs/TDialogFields.imp.inc'}
+    { элемент управления диалогового окна }
+    {%File 'dialogs/TDialogControl.int.inc'}
+    {%File 'dialogs/TDialogControl.err.inc'}
+    {%File 'dialogs/TDialogControl.imp.inc'}
+    { список элементов управления диалогового окна }
+    {%File 'dialogs/TDialogControls.int.inc'}
+    {%File 'dialogs/TDialogControls.err.inc'}
+    {%File 'dialogs/TDialogControls.imp.inc'}
+{%File 'dialogs/uWizardDialog.pas'}
+{%File 'dialogs/uColorDialog.pas'}
+{%File 'dialogs/uIconDialog.pas'}
+{%File 'dialogs/uSmileDialog.pas'}
+{%File 'dialogs/uLoginDialog.pas'}
+{%File 'dialogs/uRegisterDialog.pas'}
+{%File 'dialogs/uCategorieDialog.pas'}
+{%File 'dialogs/uMessageDialog.pas'}
+{%File 'dialogs/uUserDialog.pas'}
+{%File 'dialogs/uRandomTestDialog.pas'}
+{%File 'dialogs/uAsymmetricTestDialog.pas'}
+{%File 'dialogs/uSymmetricTestDialog.pas'}
+{%File 'dialogs/uHashTestDialog.pas'}

@@ -1,0 +1,45 @@
+This archive contains six fast pseudo random number generators with
+period lengths much greater than Pascal's random function: taus88 and
+taus113 (Pierre L'Ecuyer), tt800 and mt19937 (Makoto Matsumoto et al,
+mt19937 is the famous Mersenne Twister), kiss123 (George Marsaglia), and
+xor4096 (Richard P. Brent). All are implemented with context records,
+therefore several independent generators can be used simultaneously,
+they are NOT cryptographically secure.
+
+In addition there are three cryptographic generators:
+ * Bob Jenkins' public domain ISAAC random number generator (Indirection,
+   Shift, Accumulate, Add, and Count). The average cycle length of ISAAC
+   is 2**8295, the minimum length is 2**40.
+ * salsar is based upon the Salsa20 stream cipher and needs the salsa20
+   unit from salsa_yyyy-mm-dd.zip. The core routine uses 128 bit keys
+   and 8 rounds (this default value can be changed to 12 or 20 rounds
+   with salsar_set_rounds).
+ * aesr uses the AES routines from aes_yyyy-mm-dd.zip in CTR mode with
+   128 bit key.
+
+The units and test programs can be compiled with all current Pascal
+(TP5/5.5/6, BP7, VP 2.1, FPC 1.0/2.0/2.2) and Delphi (1..7/9/10/12) versions.
+Most test programs need the ministat and/or the hrtimer unit.
+
+Table of generator properties (C/B: CPU cycles per byte, MB/s: million
+bytes per second on 1.8 GHz Pentium 4 / Windows 98, P7: Borland Pascal 7
+real mode with 386 BASM; isaac was compiled with {$define testing}):
+
++-----------+----------+----------+--------+---------+--------+---------+
+| Generator | ctx size |   period | C/B P7 | MB/s P7 | C/B D6 | MB/s D6 |
++-----------+----------+----------+--------+---------+--------+---------+
+|    random |      (4) |    2**32 |   79.0 |    22.7 |    7.5 |   239.0 |
+|    taus88 |       16 |    2**88 |   80.5 |    22.3 |    6.5 |   275.8 |
+|   taus113 |       20 |   2**113 |   83.0 |    21.6 |    8.3 |   217.3 |
+|   kiss123 |       20 |   2**123 |   96.0 |    18.7 |   11.8 |   152.6 |
+|     tt800 |      106 |   2**800 |  230.8 |     7.8 |   18.1 |    99.2 |
+|   xor4096 |      522 |  2**4096 |   82.5 |    21.7 |    5.8 |   311.8 |
+|   mt19937 |     2502 | 2**19937 |  220.3 |     8.1 |    8.3 |   216.2 |
++-----------+----------+----------+--------+---------+--------+---------+
+|      aesr |      290 |   2**128 |  236.0 |     7.6 |   28.4 |    63.2 |
+|    salsar |      202 |    2**70 |  109.3 |    16.4 |   14.4 |   124.8 |
+|     isaac |     2066 |  2**8295 |  109.5 |    16.3 |    9.1 |   197.8 |
++-----------+----------+----------+--------+---------+--------+---------+
+
+Last changes (July 2009): 
+- D12 adjustments

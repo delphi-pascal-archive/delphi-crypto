@@ -1,0 +1,9 @@
+{******************************************************************************}
+{*  png.dec                                                                   *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{ pngimage v.1.5.6.5 }
+{%File 'png/pngextra.pas'}
+{%File 'png/pngimage.pas'}
+{%File 'png/pnglang.pas'}

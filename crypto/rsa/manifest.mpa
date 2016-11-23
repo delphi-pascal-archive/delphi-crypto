@@ -1,0 +1,47 @@
+#ca.bat            Generic compile batch file for all console compilers
+#mdata.zip         Archive with data used by t_check.pas
+$log_mpa.zip       Archive with log files of final tests done before release
+3rdparty.mpa       3rd party licenses
+btypes.pas         Common basic type definitions
+copying_we.txt     WE's license
+history            Development history for MPArith
+isaac.pas          Bob Jenkins' public domain random number generator ISAAC
+legal.txt          Legal notice (cryptography, software patents)
+manifest.mpa       This file
+mp_arith.*         Windows and BP7 help files
+mp_base.pas        MP integer arithmetic basic routines
+mp_calc.pas        Parse and evaluate mp_int expressions
+mp_conf.inc        Config definitions/options for the MPArith library
+mp_intro.txt       Information about the MPArith package, function list, references
+mp_isaac.inc       Include file for using ISAAC CPRNG
+mp_numth.pas       MP modular arithmetic and number theoretic functions
+mp_pbits.inc       Include file, bit mask array for 16 bit primes
+mp_prime.pas       Basic 16/32 bit prime number support
+mp_prm16.inc       Table of 16 bit primes
+mp_prng.pas        MP interface to (C)PRNG, functions for PRNG generation
+mp_ratio.pas       Multi precision rational arithmetic routines
+mp_rcalc.pas       Parse and evaluate mp_float expressions
+mp_rconp.pas       124000 bit tables for Pi, ln(2), ln(10)
+mp_real.pas        Multi precision floating point arithmetic routines
+mp_rsa.pas         MP functions for basic RSA based public-key cryptography
+mp_supp.pas        Supplemental routines for MPArith
+mp_taus.inc        Include file for using taus88 PRNG
+mp_types.pas       MPArith type definitions and constants
+pfdu.pas           Simple unit for prime factor decomposition
+pfdu_crt.pas       Use of pfdu with win/crt and keypress check
+readme.mpa         Package description, what's new
+std.inc            Standard definitions and options
+supptest.zip       Additional test and support programs
+taus88.pas         Taus88 based pseudo random number generator
+t_calc.pas         Test program for mp_calc unit (interactive calculator)
+t_check.pas        Main test program for the integer  arithmetic routines
+t_chkfp.pas        Main test program for the floating point routines
+t_chkrat.pas       Main test program for the rational routines
+t_ddemo*.*         Delphi demo: calculate Mersenne primes using Lucas-Lehmer test
+t_intro.pas        Demo program from mp_intro.html
+t_rcalc.pas        Test program for mp_rcalc unit (interactive calculator)
+
+hrtimer.pas        High resolution timer routines with comp data type
+tsc.pas            Access to Time Stamp Counter (RDTSC)
+_tsc.asm           RDTSC helper routines for 16 bit
+_tsc.obj           Compiled _tsc.asm

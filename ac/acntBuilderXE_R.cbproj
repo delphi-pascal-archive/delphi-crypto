@@ -1,0 +1,420 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{1428089F-6B9F-4526-A0A8-FF7A9C88E85B}</ProjectGuid>
+			<ProjectVersion>12.2</ProjectVersion>
+			<MainSource>acntBuilderXE_R.cpp</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<Platform>Win32</Platform>
+			<AppType>Library</AppType>
+			<FrameworkType>None</FrameworkType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+			<OutputExt>bpl</OutputExt>
+			<ProjectType>CppPackage</ProjectType>
+			<PackageImports>vclimg.bpi;vcl.bpi;vclx.bpi;dbrtl.bpi;Rave90VCL.bpi;bdertl.bpi;rtl.bpi;bcbie.bpi;xmlrtl.bpi;vclactnband.bpi;bcbsmp.bpi;VclSmp.bpi;svnui.bpi;svn.bpi;TeeUI.bpi;TeeDB.bpi;Tee.bpi;vcldb.bpi;vcldbx.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;inet.bpi;intrawebdb_110_150.bpi;Intraweb_110_150.bpi;vclie.bpi;websnap.bpi;webdsnap.bpi;inetdb.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;vclribbon.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;DbxClientDriver.bpi;DataSnapClient.bpi;dbxcds.bpi;DataSnapServer.bpi;AzureCloud.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi;CodeSiteExpressVcl.bpi</PackageImports>
+			<_TCHARMapping>wchar_t</_TCHARMapping>
+			<ILINK_GenerateLibFile>true</ILINK_GenerateLibFile>
+			<ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+			<LinkPackageImports>rtl.bpi;vcl.bpi</LinkPackageImports>
+			<AllPackageLibs>rtl.lib;vcl.lib</AllPackageLibs>
+			<Multithreaded>true</Multithreaded>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE</DCC_UnitAlias>
+			<DynamicRTL>true</DynamicRTL>
+			<UsePackages>true</UsePackages>
+			<BCC_wpar>false</BCC_wpar>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<Defines>_DEBUG;$(Defines)</Defines>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+			<DCC_Define>DEBUG</DCC_Define>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<BCC_StackFrames>true</BCC_StackFrames>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Defines>NDEBUG;$(Defines)</Defines>
+			<TASM_Debugging>None</TASM_Debugging>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="acAlphaHints.pas">
+				<BuildOrder>89</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acAlphaImageList.pas">
+				<BuildOrder>86</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acCoolBar.pas">
+				<BuildOrder>76</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acDials.pas">
+				<BuildOrder>84</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acGlow.pas">
+				<BuildOrder>91</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acHeaderControl.pas">
+				<BuildOrder>79</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acMagn.pas">
+				<Form>acMagnForm</Form>
+				<BuildOrder>81</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acNotebook.pas">
+				<BuildOrder>78</BuildOrder>
+			</DelphiCompile>
+			<CppCompile Include="acntBuilderXE_R.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<DelphiCompile Include="acntUtils.pas">
+				<BuildOrder>82</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acPathDialog.pas">
+				<Form>PathDialogForm</Form>
+				<BuildOrder>75</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acPNG.pas">
+				<BuildOrder>87</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acProgressBar.pas">
+				<BuildOrder>77</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acSBUtils.pas">
+				<BuildOrder>80</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acShellCtrls.pas">
+				<BuildOrder>74</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acSkinPack.pas">
+				<BuildOrder>85</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acThdTimer.pas">
+				<BuildOrder>90</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acThumbForm.pas">
+				<Form>MagnifierOwner</Form>
+				<BuildOrder>88</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="acZLibEx.pas">
+				<BuildOrder>92</BuildOrder>
+			</DelphiCompile>
+			<PackageImport Include="rtl.bpi">
+				<BuildOrder>1</BuildOrder>
+			</PackageImport>
+			<DelphiCompile Include="sAlphaGraph.pas">
+				<BuildOrder>50</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sBevel.pas">
+				<BuildOrder>13</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sBitBtn.pas">
+				<BuildOrder>62</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sBorders.pas">
+				<BuildOrder>39</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sButton.pas">
+				<BuildOrder>60</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCalculator.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCalcUnit.pas">
+				<Form>sCalcForm</Form>
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCheckBox.pas">
+				<BuildOrder>8</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCheckListBox.pas">
+				<BuildOrder>54</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sColorDialog.pas">
+				<Form>sColorDialogForm</Form>
+				<BuildOrder>73</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sColorSelect.pas">
+				<BuildOrder>66</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sComboBox.pas">
+				<BuildOrder>51</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sComboBoxes.pas">
+				<BuildOrder>4</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sComboEdit.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCommonData.pas">
+				<BuildOrder>49</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sConst.pas">
+				<BuildOrder>6</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCurrEdit.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCurrencyEdit.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sCustomComboEdit.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sDateUtils.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sDefaults.pas">
+				<BuildOrder>37</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sDialogs.pas">
+				<BuildOrder>59</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sEdit.pas">
+				<BuildOrder>2</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sFade.pas">
+				<BuildOrder>63</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sFileCtrl.pas">
+				<BuildOrder>69</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sFontCtrls.pas">
+				<BuildOrder>70</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sFrameAdapter.pas">
+				<BuildOrder>57</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sFrameBar.pas">
+				<BuildOrder>72</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sGauge.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sGlyphUtils.pas">
+				<BuildOrder>34</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sGradient.pas">
+				<BuildOrder>36</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sGraphUtils.pas">
+				<BuildOrder>11</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sGroupBox.pas">
+				<BuildOrder>14</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sHintManager.pas">
+				<BuildOrder>67</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sHtmlParse.pas">
+				<BuildOrder>33</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sLabel.pas">
+				<BuildOrder>64</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sListBox.pas">
+				<BuildOrder>83</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sListView.pas">
+				<BuildOrder>56</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMaskData.pas">
+				<BuildOrder>41</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMaskEdit.pas">
+				<BuildOrder>38</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMDIForm.pas">
+				<BuildOrder>47</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMemo.pas">
+				<BuildOrder>3</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMessages.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sMonthCalendar.pas">
+				<BuildOrder>31</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sPageControl.pas">
+				<BuildOrder>10</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sPanel.pas">
+				<BuildOrder>5</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sPopupClndr.pas">
+				<Form>sPopupCalendar</Form>
+				<BuildOrder>32</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sRadioButton.pas">
+				<BuildOrder>7</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sRichEdit.pas">
+				<BuildOrder>68</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sScrollBar.pas">
+				<BuildOrder>46</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sScrollBox.pas">
+				<BuildOrder>48</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSkinManager.pas">
+				<BuildOrder>40</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSkinMenus.pas">
+				<BuildOrder>45</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSkinProps.pas">
+				<BuildOrder>42</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSkinProvider.pas">
+				<BuildOrder>43</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSpeedButton.pas">
+				<BuildOrder>61</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSpinEdit.pas">
+				<BuildOrder>12</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sSplitter.pas">
+				<BuildOrder>52</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sStatusBar.pas">
+				<BuildOrder>15</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sStoreUtils.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sStrings.pas">
+				<BuildOrder>44</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sStyleSimply.pas">
+				<BuildOrder>35</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sTabControl.pas">
+				<BuildOrder>53</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sThirdParty.pas">
+				<BuildOrder>71</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sToolBar.pas">
+				<BuildOrder>65</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sToolEdit.pas">
+				<BuildOrder>30</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sTrackBar.pas">
+				<BuildOrder>17</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sTreeView.pas">
+				<BuildOrder>55</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sUpDown.pas">
+				<BuildOrder>58</BuildOrder>
+			</DelphiCompile>
+			<DelphiCompile Include="sVclUtils.pas">
+				<BuildOrder>16</BuildOrder>
+			</DelphiCompile>
+			<PackageImport Include="vcl.bpi">
+				<BuildOrder>9</BuildOrder>
+			</PackageImport>
+			<PackageImport Include="vclimg.bpi">
+				<BuildOrder>18</BuildOrder>
+			</PackageImport>
+			<PackageImport Include="vclx.bpi">
+				<BuildOrder>30</BuildOrder>
+			</PackageImport>
+			<FormResources Include="sPopupClndr.dfm"/>
+			<FormResources Include="acThumbForm.dfm"/>
+			<FormResources Include="acPathDialog.dfm"/>
+			<FormResources Include="acMagn.dfm"/>
+			<FormResources Include="sCalcUnit.dfm"/>
+			<FormResources Include="sColorDialog.dfm"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')" Project="$(BDS)\Bin\CodeGear.Cpp.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppPackage</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<Source>
+						<Source Name="MainSource">acntBuilderXE_R.cpp</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1049</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+				</CPlusPlusBuilder.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

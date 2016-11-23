@@ -1,0 +1,91 @@
+{******************************************************************************}
+{*  Engine.dec                                                                *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{ движок }
+{%File 'engine/Engine.pas'}
+    { иконка }
+    {%File 'engine/TPic.int.inc'}
+    {%File 'engine/TPic.err.inc'}
+    {%File 'engine/TPic.imp.inc'}
+    { список иконок }
+    {%File 'engine/TPics.int.inc'}
+    {%File 'engine/TPics.err.inc'}
+    {%File 'engine/TPics.imp.inc'}
+    { пользователь }
+    {%File 'engine/TUser.int.inc'}
+    {%File 'engine/TUser.err.inc'}
+    {%File 'engine/TUser.imp.inc'}
+    { список пользователей }
+    {%File 'engine/TUsers.int.inc'}
+    {%File 'engine/TUsers.err.inc'}
+    {%File 'engine/TUsers.imp.inc'}
+    { тип сообщения }
+    {%File 'engine/TMessageType.int.inc'}
+    {%File 'engine/TMessageType.err.inc'}
+    {%File 'engine/TMessageType.imp.inc'}
+    { статус сообщения }
+    {%File 'engine/TMessageStatus.int.inc'}
+    {%File 'engine/TMessageStatus.err.inc'}
+    {%File 'engine/TMessageStatus.imp.inc'}
+    { сообщение }
+    {%File 'engine/TMessage.int.inc'}
+    {%File 'engine/TMessage.err.inc'}
+    {%File 'engine/TMessage.imp.inc'}
+    { список сообщений }
+    {%File 'engine/TMessages.int.inc'}
+    {%File 'engine/TMessages.err.inc'}
+    {%File 'engine/TMessages.imp.inc'}
+    { тип категории }
+    {%File 'engine/TCategorieType.int.inc'}
+    {%File 'engine/TCategorieType.err.inc'}
+    {%File 'engine/TCategorieType.imp.inc'}
+    { статус категории }
+    {%File 'engine/TCategorieStatus.int.inc'}
+    {%File 'engine/TCategorieStatus.err.inc'}
+    {%File 'engine/TCategorieStatus.imp.inc'}
+    { категория }
+    {%File 'engine/TCategorie.int.inc'}
+    {%File 'engine/TCategorie.err.inc'}
+    {%File 'engine/TCategorie.imp.inc'}
+    { список категорий }
+    {%File 'engine/TCategories.int.inc'}
+    {%File 'engine/TCategories.err.inc'}
+    {%File 'engine/TCategories.imp.inc'}
+    { ключевое слово }
+    {%File 'engine/TKeyWord.int.inc'}
+    {%File 'engine/TKeyWord.err.inc'}
+    {%File 'engine/TKeyWord.imp.inc'}
+    { список ключевых слов }
+    {%File 'engine/TKeyWords.int.inc'}
+    {%File 'engine/TKeyWords.err.inc'}
+    {%File 'engine/TKeyWords.imp.inc'}
+    { тип пакета }
+    {%File 'engine/TPackageType.int.inc'}
+    {%File 'engine/TPackageType.err.inc'}
+    {%File 'engine/TPackageType.imp.inc'}
+    { статус пакета }
+    {%File 'engine/TPackageStatus.int.inc'}
+    {%File 'engine/TPackageStatus.err.inc'}
+    {%File 'engine/TPackageStatus.imp.inc'}
+    { пакет }
+    {%File 'engine/TPackage.int.inc'}
+    {%File 'engine/TPackage.err.inc'}
+    {%File 'engine/TPackage.imp.inc'}
+    { список пакетов }
+    {%File 'engine/TPackages.int.inc'}
+    {%File 'engine/TPackages.err.inc'}
+    {%File 'engine/TPackages.imp.inc'}
+    { список пользователей и групп }
+    {%File 'engine/UsersList.int.inc'}
+    {%File 'engine/UsersList.err.inc'}
+    {%File 'engine/UsersList.imp.inc'}
+    { дерево категорий }
+    {%File 'engine/CategoriesTree.int.inc'}
+    {%File 'engine/CategoriesTree.err.inc'}
+    {%File 'engine/CategoriesTree.imp.inc'}
+    { список сообщений в категории }
+    {%File 'engine/MessagesList.int.inc'}
+    {%File 'engine/MessagesList.err.inc'}
+    {%File 'engine/MessagesList.imp.inc'}

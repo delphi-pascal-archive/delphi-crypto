@@ -1,0 +1,8 @@
+{******************************************************************************}
+{*  gzlib.dec                                                                 *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2012                                             *}
+{******************************************************************************}
+{%File 'gzlib\gZLibEx.pas'}
+{%File 'gzlib\gZLibExApi.pas'}
+{%File 'gzlib\gZLibExGZ.pas'}

@@ -1,0 +1,103 @@
+{******************************************************************************}
+{*  Crypto.dec                                                                *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{ крипто-ядро }
+{%File 'crypto/Crypto.pas'}
+    { ключи шифровани }
+    {%File 'crypto/TKey.int.inc'}
+    {%File 'crypto/TKey.imp.inc'}
+    { генераторы псевдо-случайных чисел }
+    {%File 'crypto/TRandomType.int.inc'}
+    {%File 'crypto/TRandomType.err.inc'}
+    {%File 'crypto/TRandomType.imp.inc'}
+    {%File 'crypto/PRNG.int.inc'}
+    {%File 'crypto/PRNG.err.inc'}
+    {%File 'crypto/PRNG.imp.inc'}
+    {%File 'crypto/PRNG.project.inc'}
+    {%File 'crypto/PRNG.uses.inc'}
+    { асимметричные шифры }
+    {%File 'crypto/TPKCryptoType.int.inc'}
+    {%File 'crypto/TPKCryptoType.err.inc'}
+    {%File 'crypto/TPKCryptoType.imp.inc'}
+    {%File 'crypto/RSA.int.inc'}
+    {%File 'crypto/RSA.err.inc'}
+    {%File 'crypto/RSA.imp.inc'}
+    {%File 'crypto/RSA.test.int.inc'}
+    {%File 'crypto/RSA.test.imp.inc'}
+    {%File 'crypto/RSA.project.inc'}
+    {%File 'crypto/RSA.uses.inc'}
+    { симметричные шифры }
+    {%File 'crypto/TCryptoType.int.inc'}
+    {%File 'crypto/TCryptoType.err.inc'}
+    {%File 'crypto/TCryptoType.imp.inc'}
+    {%File 'crypto/TCryptoMode.int.inc'}
+    {%File 'crypto/TCryptoMode.err.inc'}
+    {%File 'crypto/TCryptoMode.imp.inc'}
+    {%File 'crypto/AES.int.inc'}
+    {%File 'crypto/AES.err.inc'}
+    {%File 'crypto/AES.imp.inc'}
+    {%File 'crypto/AES.test.int.inc'}
+    {%File 'crypto/AES.test.imp.inc'}
+    {%File 'crypto/AES.project.inc'}
+    {%File 'crypto/AES.uses.inc'}
+    {%File 'crypto/Anubis.int.inc'}
+    {%File 'crypto/Anubis.err.inc'}
+    {%File 'crypto/Anubis.imp.inc'}
+    {%File 'crypto/Anubis.test.int.inc'}
+    {%File 'crypto/Anubis.test.imp.inc'}
+    {%File 'crypto/Anubis.project.inc'}
+    {%File 'crypto/Anubis.uses.inc'}
+    {%File 'crypto/Serpent.int.inc'}
+    {%File 'crypto/Serpent.err.inc'}
+    {%File 'crypto/Serpent.imp.inc'}
+    {%File 'crypto/Serpent.test.int.inc'}
+    {%File 'crypto/Serpent.test.imp.inc'}
+    {%File 'crypto/Serpent.project.inc'}
+    {%File 'crypto/Serpent.uses.inc'}
+    {%File 'crypto/Shacal.int.inc'}
+    {%File 'crypto/Shacal.err.inc'}
+    {%File 'crypto/Shacal.imp.inc'}
+    {%File 'crypto/Shacal.test.int.inc'}
+    {%File 'crypto/Shacal.test.imp.inc'}
+    {%File 'crypto/Shacal.project.inc'}
+    {%File 'crypto/Shacal.uses.inc'}
+    {%File 'crypto/BlowFish.int.inc'}
+    {%File 'crypto/BlowFish.err.inc'}
+    {%File 'crypto/BlowFish.imp.inc'}
+    {%File 'crypto/BlowFish.test.int.inc'}
+    {%File 'crypto/BlowFish.test.imp.inc'}
+    {%File 'crypto/BlowFish.project.inc'}
+    {%File 'crypto/BlowFish.uses.inc'}
+    {%File 'crypto/TwoFish.int.inc'}
+    {%File 'crypto/TwoFish.err.inc'}
+    {%File 'crypto/TwoFish.imp.inc'}
+    {%File 'crypto/TwoFish.test.int.inc'}
+    {%File 'crypto/TwoFish.test.imp.inc'}
+    {%File 'crypto/TwoFish.project.inc'}
+    {%File 'crypto/TwoFish.uses.inc'}
+    { хэш-функции }
+    {%File 'crypto/THashType.int.inc'}
+    {%File 'crypto/THashType.err.inc'}
+    {%File 'crypto/THashType.imp.inc'}
+    {%File 'crypto/SHA.int.inc'}
+    {%File 'crypto/SHA.err.inc'}
+    {%File 'crypto/SHA.imp.inc'}
+    {%File 'crypto/SHA.test.int.inc'}
+    {%File 'crypto/SHA.test.imp.inc'}
+    {%File 'crypto/Tiger.int.inc'}
+    {%File 'crypto/Tiger.err.inc'}
+    {%File 'crypto/Tiger.imp.inc'}
+    {%File 'crypto/Tiger.test.int.inc'}
+    {%File 'crypto/Tiger.test.imp.inc'}
+    {%File 'crypto/MD.int.inc'}
+    {%File 'crypto/MD.err.inc'}
+    {%File 'crypto/MD.imp.inc'}
+    {%File 'crypto/MD.test.int.inc'}
+    {%File 'crypto/MD.test.imp.inc'}
+    {%File 'crypto/RipeMD.int.inc'}
+    {%File 'crypto/RipeMD.err.inc'}
+    {%File 'crypto/RipeMD.imp.inc'}
+    {%File 'crypto/RipeMD.test.int.inc'}
+    {%File 'crypto/RipeMD.test.imp.inc'}

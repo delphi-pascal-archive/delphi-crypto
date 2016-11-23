@@ -1,0 +1,10 @@
+del *.dcu
+del crypto\*.dcu
+del kernel\*.dcu
+del engine\*.dcu
+del dialogs\*.dcu
+del synapse\*.dcu
+del xml\*.dcu
+del ac\*.dcu
+del rx\*.dcu
+del png\*.dcu

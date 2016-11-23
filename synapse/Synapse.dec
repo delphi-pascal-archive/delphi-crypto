@@ -1,0 +1,44 @@
+{******************************************************************************}
+{*  Synapse.dec                                                               *}
+{*  Revolutionary Confederation of Anarcho Syndicalists                       *}
+{*  Written by: black.rabbit 2011                                             *}
+{******************************************************************************}
+{.%File 'synapse/asn1util.pas'}
+{%File 'synapse/blcksock.pas'}
+{.%File 'synapse/clamsend.pas'}
+{.%File 'synapse/dnssend.pas'}
+{.%File 'synapse/ftpsend.pas'}
+{.%File 'synapse/ftptsend.pas'}
+{%File 'synapse/httpsend.pas'}
+{.%File 'synapse/imapsend.pas'}
+{.%File 'synapse/ldapsend.pas'}
+{.%File 'synapse/mimeinln.pas'}
+{.%File 'synapse/mimemess.pas'}
+{.%File 'synapse/mimepart.pas'}
+{.%File 'synapse/nntpsend.pas'}
+{.%File 'synapse/pingsend.pas'}
+{.%File 'synapse/pop3send.pas'}
+{.%File 'synapse/slogsend.pas'}
+{.%File 'synapse/snmpsend.pas'}
+{.%File 'synapse/sntpsend.pas'}
+{.%File 'synapse/ssdotnet.pas'}
+{.%File 'synapse/ssfpc.pas'}
+{.%File 'synapse/ssl_cryptlib.pas'}
+{.%File 'synapse/ssl_openssl.pas'}
+{.%File 'synapse/ssl_openssl_lib.pas'}
+{.%File 'synapse/ssl_sbb.pas'}
+{.%File 'synapse/ssl_streamsec.pas'}
+{.%File 'synapse/sslinux.pas'}
+{%File 'synapse/sswin32.pas'}
+{.%File 'synapse/synachar.pas'}
+{%File 'synapse/synacode.pas'}
+{.%File 'synapse/synacrypt.pas'}
+{.%File 'synapse/synadbg.pas'}
+{%File 'synapse/synafpc.pas'}
+{.%File 'synapse/synaicnv.pas'}
+{%File 'synapse/synaip.pas'}
+{.%File 'synapse/synamisc.pas'}
+{.%File 'synapse/synaser.pas'}
+{%File 'synapse/synautil.pas'}
+{%File 'synapse/synsock.pas'}
+{.%File 'synapse/tlntsend.pas'}

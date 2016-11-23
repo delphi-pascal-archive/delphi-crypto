@@ -1,0 +1,53 @@
+object MetaContent: TMetaContent
+  Left = 0
+  Top = 0
+  Width = 283
+  Height = 200
+  Color = 2169368
+  Font.Charset = RUSSIAN_CHARSET
+  Font.Color = 14603725
+  Font.Height = -13
+  Font.Name = 'Arial'
+  Font.Style = [fsBold]
+  ParentColor = False
+  ParentFont = False
+  TabOrder = 0
+  TabStop = True
+  object pnlBackGround: TsPanel
+    Left = 0
+    Top = 0
+    Width = 283
+    Height = 200
+    Align = alClient
+    ParentColor = True
+    TabOrder = 0
+    SkinData.SkinSection = 'PANEL_LOW'
+    object pnlLabels: TsPanel
+      AlignWithMargins = True
+      Left = 4
+      Top = 4
+      Width = 81
+      Height = 192
+      Margins.Right = 0
+      Align = alLeft
+      AutoSize = True
+      Padding.Left = 8
+      Padding.Right = 8
+      ParentColor = True
+      TabOrder = 0
+      SkinData.SkinSection = 'BARPANEL'
+    end
+    object pnlControls: TsPanel
+      AlignWithMargins = True
+      Left = 85
+      Top = 4
+      Width = 194
+      Height = 192
+      Margins.Left = 0
+      Align = alClient
+      ParentColor = True
+      TabOrder = 1
+      SkinData.SkinSection = 'BARPANEL'
+    end
+  end
+end
